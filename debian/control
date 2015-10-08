@@ -9,5 +9,5 @@ Homepage: http://www.qubes-os.org
 Package: qubes-mgmt-salt-dom0-fix-permissions
 Section: admin
 Architecture: all
-Depends: qubes-mgmt-salt-base, qubes-mgmt-salt-config, qubes-mgmt-salt-dom0
+Depends: qubes-mgmt-salt, qubes-mgmt-salt-dom0
 Description: Resets all Qubes related files and directories to the proper permissions.
