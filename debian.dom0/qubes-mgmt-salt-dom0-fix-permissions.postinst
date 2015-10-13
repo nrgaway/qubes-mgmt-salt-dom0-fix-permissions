@@ -25,7 +25,7 @@ case "${1}" in
         qubesctl saltutil.sync_all refresh=true -l quiet --out quiet > /dev/null || true
 
         # Disable States (Work in Progress)
-        qubesctl topd.disable fix-permissions saltenv=dom0 -l quiet --out quiet > /dev/null || true
+        qubesctl top.disable fix-permissions saltenv=dom0 -l quiet --out quiet > /dev/null || true
         ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
