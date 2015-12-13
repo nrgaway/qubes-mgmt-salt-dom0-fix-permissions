@@ -1,16 +1,13 @@
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
 package-name:       qubes-mgmt-salt-dom0-fix-permissions
-name:               fix-permissions-formula
-top_level_dir:      fix-permissions
-formula-files:      README.rst LICENSE fix-permissions
-pillar-files:       
-test-formula-files: 
-test-pillar-files: 
-formula_root:       /srv/formulas
 saltenv:            dom0
 version:            3.0.0
 release:            1
+name:               fix-permissions-formula
+top_level_dir:      fix-permissions
+formula-files:      README.rst LICENSE fix-permissions
+formula_dir:        $(MGMT_DEFAULT_FORMULA_DIR)/$(MGMT_SALTENV)/$(MGMT_NAME)
 os:                 Qubes
 os_family:          RedHat
 summary:            Resets all Qubes related files and directories to the proper permissions.
